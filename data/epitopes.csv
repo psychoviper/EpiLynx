@@ -1,7 +1,0 @@
-Cell Type,Protein ID,Epitope,Allergen Test,Toxicity Test,Antigen Test,Score,Allele,Result,IFM_Gamma
-bCell.csv,TsM_000065000,KRVPNANQYPRKHANM,Non-Allergen,Non-Toxin,Pending,0.93,NA,NA,NA
-TC(A1).csv,TsM_000510800,KTLNYYWRY,Non-Allergen,Non-Toxin,Pending,2.9645,NA,NA,NA
-TC(A1).csv,TsM_000510800,ESGRSVYGY,Non-Allergen,Non-Toxin,Pending,1.0253,NA,NA,NA
-TC(A1).csv,TsM_000510800,LMGQRKFRY,Non-Allergen,Non-Toxin,Pending,1.0183,NA,NA,NA
-TH(IFN).csv,TsM_000065000,AGGILRRGTASGWER,Non-Allergen,Non-Toxin,Pending,0.636758,DRB1_0402,Strong Binder,POSITIVE
-TH(IFN).csv,TsM_000065000,RKRIDAQHKRGKLTA,Non-Allergen,Non-Toxin,Pending,0.753293,DRB1_1301,Strong Binder,POSITIVE
