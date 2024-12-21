@@ -1,0 +1,21 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;            /* Enable Flexbox */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* Full viewport height */
+}
+
+.custom-card {
+    max-width: 600px;         /* Set maximum width */
+    width: 100%;              /* Allow it to shrink below max-width */
+    padding: 20px;            /* Optional: Add padding for spacing */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}

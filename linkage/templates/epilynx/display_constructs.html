@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine Details</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            margin: 50px auto;
+            max-width: 90%;
+        }
+
+        /* Styling for the "NEW" badge */
+        .newarrival {
+            background: green;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            max-width: 1200px; /* Limit table size */
+            margin: 0 auto; /* Center the table */
+            border-collapse: collapse; /* Merge borders */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+        th, td {
+            padding: 10px 15px; /* Space inside cells */
+            text-align: left; /* Align text to the left */
+            border: 1px solid #ddd; /* Grid borders */
+        }
+        th {
+            background-color: #4CAF50; /* Header background color */
+            color: white; /* Header text color */
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternate row colors */
+        }
+        tr:hover {
+            background-color: #e0f7e9; /* Highlight row on hover */
+        }
+        td.text-break {
+            word-wrap: break-word; /* Allow wrapping for long text */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px; /* Adjust font size for small screens */
+            }
+            th, td {
+                padding: 8px 10px; /* Adjust padding for small screens */
+            }
+        }
+        @media (max-width: 480px) {
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 5px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="newarrival">NEW</p>
+        <h2>Vaccine Details</h2>
+        <p>Your file is ready. <a href="/media/sorted_data.csv" download>Click to download</a></p>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <!-- Example Column Headers -->
+                    {% for column in data.columns %}
+                        <th>{{ column }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data.values %}
+                    <tr>
+                        {% for value in row %}
+                            <td class="text-break">{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
