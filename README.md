@@ -19,15 +19,23 @@ In traditional vaccine development workflows, researchers manually link epitopes
 
 ---
 
-## How It Works
 ### Problem Statement
 Before EpiLynx, researchers had to:
 1. Manually link epitopes and add linkers based on intuition or trial and error.
 2. Fetch the instability index of sequences from various external tools.
-
 3. Repeat this process iteratively to identify an optimal sequence.
 
 This process could take days to weeks, especially when analyzing multiple potential combinations.
+
+## How It Works
+1. Upload an initial CSV file (`default_file.csv`) containing epitope sequences and linker options.
+2. The software processes the input to:
+   - Link epitopes automatically.
+   - Calculate instability indices in real-time.
+   - Provide optimal results using AI-enhanced algorithms.
+3. Download the final results for further analysis.
+
+
 
 ### EpiLynx Solution
 EpiLynx introduces a fully automated solution:
